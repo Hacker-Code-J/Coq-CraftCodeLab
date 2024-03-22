@@ -12,7 +12,7 @@ Inductive day : Type :=
  | sunday.
 
 (* Define a Function *)
- Definition next_weekday (d:day) : day :=
+ (* Definition next_weekday (d:day) : day :=
  match d with
  | monday       => tuesday
  | tuesday      => wednesday
@@ -21,14 +21,18 @@ Inductive day : Type :=
  | friday       => monday
  | saturday     => monday
  | sunday       => monday
-end.
+end. *)
 
-Compute (next_weekday friday).
+Check day.
+Check Set.
+Check Type.
+
+(* Compute (next_weekday friday).
 Compute (next_weekday (next_weekday saturday)).
 
 Example test_next_weekday:
     (next_weekday (next_weekday saturday)) = tuesday.
-Proof. simpl. reflexivity. Qed.
+Proof. simpl. reflexivity. Qed. *)
 
  (* Name-Type-Value Triple *)
 (* Definition a: day := monday.
