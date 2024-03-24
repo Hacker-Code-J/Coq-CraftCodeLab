@@ -1,5 +1,22 @@
 \chapter{Coq Tutorial}
 
+\section{Boolean}
+
+\begin{lstlisting}[style=coq]
+Inductive bool : Type :=
+ | true
+ | false.
+\end{lstlisting}
+
+\begin{lstlisting}[style=coq]
+Definition negb (b:bool) : bool :=
+ match b with	
+ | true => false
+ | false => true
+end.
+\end{lstlisting}
+
+
 %\begin{itemize}
 %	\item Proof Assistant
 %	\item Coq offer Automated Prove \textbf{Tactics}
