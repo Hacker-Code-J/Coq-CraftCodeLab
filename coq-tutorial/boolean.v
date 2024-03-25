@@ -58,3 +58,7 @@ Check mybool.
 Check negb_my.
 Check andb_my.
 Check orb_my.
+
+(** Infix Notation *)
+Notation "x && y" := (andb x y).
+Notation "x || y" := (orb x y).
